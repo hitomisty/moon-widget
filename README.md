@@ -24,7 +24,9 @@ Notionなどのページに埋め込んで、セルフケアのリズムを整�
 
  [https://hitomisty.github.io/moon-widget/](https://hitomisty.github.io/moon-widget/)
 
+
+英語版
+
 ---
 
-興味があれば、フォークしてカスタマイズしてください。
-
+コピーしてご自由にカスタマイズしてください。
