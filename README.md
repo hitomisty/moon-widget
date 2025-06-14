@@ -22,10 +22,8 @@ Notionなどのページに埋め込んで、セルフケアのリズムを整�
 
 ## 公開URL
 
- [https://hitomisty.github.io/moon-widget/](https://hitomisty.github.io/moon-widget/)
-
-
-英語版
+- 日本語版 [https://hitomisty.github.io/moon-widget/](https://hitomisty.github.io/moon-widget/)
+- 英語版 [https://hitomisty.github.io/moon-widget-en/](https://hitomisty.github.io/moon-widget-en/)
 
 ---
 
