@@ -26,12 +26,13 @@
     }
     .moon-label {
       font-size: 1.4em;
+      white-space: pre-line;
     }
   </style>
 </head>
 <body>
   <div class="moon-icon" id="moonIcon">🌙</div>
-  <div class="moon-label" id="moonLabel">今日は...</div>
+  <div class="moon-label" id="moonLabel">今日は\n満月（まんげつ）\nです。</div>
 
   <script>
     function getMoonAge() {
@@ -66,7 +67,7 @@
     const age = getMoonAge();
     const [icon, label] = getMoonData(age);
     document.getElementById('moonIcon').textContent = icon;
-    document.getElementById('moonLabel').textContent = `今日は${label}です`;
+    document.getElementById('moonLabel').textContent = `今日は\n${label}\nです。`;
   </script>
 </body>
 </html>
