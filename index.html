@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <title>月齢ウィジェット</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      background-color: #fffaf0;
+      color: #333;
+      text-align: center;
+      padding: 2em;
+    }
+    .moon-age {
+      font-size: 2em;
+    }
+  </style>
+</head>
+<body>
+  <h1>🌙 月齢ウィジェット</h1>
+  <div class="moon-age" id="moonAge">計算中...</div>
+
+  <script>
+    function getMoonAge() {
+      const today = new Date();
+      const knownNewMoon = new Date('2000-01-06T18:14:00'); // 既知の新月
+      const synodicMonth = 29.530588; // 平均的な朔望月
+      const days = (today - knownNewMoon) / (1000 * 60 * 60 * 24);
+      return (days % synodicMonth).toFixed(1);
+    }
+
+    const moonAge = getMoonAge();
+    document.getElementById('moonAge').textContent = `今日の月齢は ${moonAge} 日です`;
+  </script>
+</body>
+</html>
